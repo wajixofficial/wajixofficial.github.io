@@ -6,6 +6,7 @@
 <title>WajiX Official</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,221 +15,321 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#0f172a;
+background:#07111f;
 color:white;
 }
 
-header{
-background:#111827;
-padding:40px 20px;
-text-align:center;
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#0b1628;
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-header h1{
-font-size:38px;
-margin-bottom:10px;
+.logo{
+font-size:32px;
+font-weight:700;
 }
 
-header p{
-color:#cbd5e1;
+.logo span{
+color:#4f8cff;
+}
+
+.telegram-btn{
+background:#10213b;
+color:white;
+text-decoration:none;
+padding:12px 18px;
+border-radius:14px;
+font-size:14px;
 }
 
 .container{
-max-width:1000px;
+max-width:1200px;
 margin:auto;
 padding:20px;
 }
 
-.category{
-font-size:22px;
+.search-box{
+width:100%;
+padding:15px;
+border:none;
+border-radius:16px;
+background:#101c30;
+color:white;
+font-size:16px;
+outline:none;
+margin-top:15px;
+margin-bottom:25px;
+}
+
+.section-title{
+font-size:32px;
 font-weight:bold;
-margin-top:35px;
+margin-top:25px;
 margin-bottom:15px;
 }
 
-..card{
-background:#1e293b;
-padding:14px;
-border-radius:12px;
-margin-bottom:10px;
+.top-offers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:15px;
 }
 
-.card h3{
+.offer-card{
+background:linear-gradient(135deg,#101c30,#162b4d);
+border-radius:18px;
+padding:20px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.offer-card h3{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.offer-card p{
+color:#b9c5d8;
+margin-bottom:15px;
+}
+
+.open-btn{
+display:inline-block;
+background:#22c55e;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:10px;
+font-weight:bold;
+}.cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+
+.small-card{
+background:#101c30;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:18px;
+padding:18px;
+}
+
+.small-card h3{
 font-size:22px;
-margin-bottom:6px;
+margin-bottom:8px;
 }
 
-.card p{
+.small-card p{
 font-size:14px;
-margin-bottom:10px;
-color:#cbd5e1;
+color:#b9c5d8;
+margin-bottom:12px;
 }
 
-.btn{
-display:inline-block;
-background:#22c55e;
-color:white;
-padding:8px 16px;
-border-radius:6px;
-text-decoration:none;
-font-size:14px;
-font-weight:bold;
-}
-
-.btn{
-display:inline-block;
-background:#22c55e;
-color:white;
-padding:10px 20px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.btn:hover{
-opacity:0.9;
-}
-
-footer{
+.footer{
+margin-top:40px;
+padding:25px;
 text-align:center;
-padding:30px;
-color:#94a3b8;
+color:#8fa1be;
+font-size:14px;
 }
+
+@media(max-width:768px){
+
+.logo{
+font-size:22px;
+}
+
+.section-title{
+font-size:24px;
+}
+
+.offer-card h3{
+font-size:22px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>🔥 WajiX Official</h1>
-<p>Best Offers, Rewards & Referral Links In One Place</p>
-</header>
+<div class="header">
+<div class="logo">
+<span>WajiX</span> Official
+</div>
+
+<a href="#" class="telegram-btn">
+Join Telegram
+</a>
+</div>
 
 <div class="container">
 
-<div class="category">⭐ Top Offers</div>
+<input
+class="search-box"
+type="text"
+placeholder="🔍 Search offers, brands..."
+>
 
-<div class="card">
+<div class="section-title">
+🔥 Top Offers
+</div>
+
+<div class="top-offers">
+
+<div class="offer-card">
 <h3>Binance</h3>
-<p>Join Binance and claim rewards.</p>
-<a class="btn" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_XNTRL" target="_blank">Open Offer</a>
+<p>Crypto rewards & bonuses</p>
+<a class="open-btn" href="#">
+Open Offer
+</a>
 </div>
 
-<div class="card">
+<div class="offer-card">
 <h3>CoinDCX</h3>
-<p>Crypto trading and rewards.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Trading rewards</p>
+<a class="open-btn" href="#">
+Open Offer
+</a>
 </div>
 
-<div class="category">💰 Finance</div>
+<div class="offer-card">
+<h3>MPL Cricket</h3>
+<p>Play & Earn</p>
+<a class="open-btn" href="#">
+Open Offer
+</a>
+</div>
+<div class="section-title">
+💰 Finance
+</div>
 
-<div class="card">
+<div class="cards-grid">
+
+<div class="small-card">
 <h3>Groww</h3>
-<p>Open your Demat account online.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Open Demat Account</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Upstox</h3>
-<p>Start investing in stocks.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Invest & Trade</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>CoinSwitch</h3>
-<p>Buy and sell crypto easily.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Buy & Sell Crypto</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>CoinDCX</h3>
-<p>Crypto trading platform.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Crypto Trading</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Binance</h3>
-<p>Trade crypto and earn rewards.</p>
-<a class="btn" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_XNTRL" target="_blank">Open Offer</a>
+<p>Global Crypto Exchange</p>
+<a class="open-btn" href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_XNTRL">
+Open Offer
+</a>
 </div>
 
-<div class="category">💳 Banking & Cards</div>
-
-<div class="card">
-<h3>HDFC Credit Card</h3>
-<p>Apply and get joining benefits.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
 </div>
 
-<div class="card">
-<h3>Axis Bank Credit Card</h3>
-<p>Credit card offers and rewards.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+
+<div class="section-title">
+💳 Banking & Cards
 </div>
 
-<div class="card">
-<h3>Kotak 811</h3>
-<p>Open your savings account online.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<div class="cards-grid">
+
+<div class="small-card">
+<h3>Credit Card</h3>
+<p>Joining Bonus Offers</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
-<h3>Jupiter</h3>
-<p>Digital banking rewards.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<div class="small-card">
+<h3>Bank Account</h3>
+<p>Account Opening Rewards</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="category">🎮 Gaming</div>
+</div>
 
-<div class="card">
+
+<div class="section-title">
+🎮 Gaming
+</div>
+
+<div class="cards-grid">
+
+<div class="small-card">
 <h3>Cricket</h3>
-<p>Play cricket contests and earn rewards.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>MPL Cricket Offers</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Ludo</h3>
-<p>Play Ludo and win rewards.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>WinZO Ludo Rewards</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Teen Patti</h3>
-<p>Popular card game offers.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Gamezy Teen Patti</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="category">🛒 Shopping</div>
+</div>
+</div><div class="section-title">
+🛒 Shopping
+</div>
 
-<div class="card">
+<div class="cards-grid">
+
+<div class="small-card">
 <h3>Meesho</h3>
-<p>Shopping offers and discounts.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Shopping Deals & Offers</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Flipkart</h3>
-<p>Best deals and shopping offers.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Best Deals Everyday</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>Myntra</h3>
-<p>Fashion and lifestyle shopping.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Fashion & Lifestyle</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
-<div class="card">
+<div class="small-card">
 <h3>AJIO</h3>
-<p>Trending fashion and clothing offers.</p>
-<a class="btn" href="#" target="_blank">Open Offer</a>
+<p>Trending Fashion Offers</p>
+<a class="open-btn" href="#">Open Offer</a>
 </div>
 
 </div>
 
-<footer>
-© 2026 WajiX Official
-</footer>
+<div class="footer">
+© 2026 WajiX Official <br>
+Best Offers, Rewards & Referral Links
+</div>
+
+</div>
 
 </body>
 </html>
+  
